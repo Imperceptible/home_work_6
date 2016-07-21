@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;;
+}
+
+.clearfix {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+/*<------сверху фиксы------>*/
+
+
+
+
+body {
+    width: 910px;
+    margin: 0 auto;
+}
+
+header {
+    height: 50px;
+    float: left;
+}
+
+.phones > img {
+    float: left;
+    width: 20px;
+}
+
+.auth {
+    float: left;
+}
+
+
+
+
+
+/*-------------------меню--------------------*/
+
+nav {
+    width: 910px;
+    height: 32px;
+    background-color: white;
+    background-image: linear-gradient(to top, black 0%, #576068 100%);
+    border-radius: 5px;
+    border: solid 1px #2d355b;
+}
+
+.main-menu_item {
+    display: block;
+    padding: 5px 20px;
+    float: left;
+}
+
+.main-menu_item > a {
+    font-size: 14px;
+    font-family: "Lucida Sans Unicode";
+    font-weight: 400;
+    color: white;
+    text-decoration: none;
+}
+
+.basket {
+    float: right;
+}
+
+.basket_item {
+    float: left
+}
+
+
+/*---------------- весь блок с колесами и боковыми меню------------------*/
+
+main {
+    overflow: hidden;
+    margin-top: 163px;
+}
+
+.right_fon {
+    float: left;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.center_fon {
+    float: left;
+    width: 100%;
+    position: relative;
+    right: 21%;
+}
+
+.left_fon {
+    float: left;
+    width: 100%;
+    position: relative;
+    right: 58%;
+}
+
+.left {
+    width: 21%;
+}
+
+.center {
+    width: 58%;
+}
+
+.right {
+    width: 21%;
+}
+
+.column {
+    float: left;
+    position: relative;
+    left: 79%;
+    overflow: hidden;
+}
+
+.catalog_submenu li {
+    display: block;
+}
+
+.brends_submenu li {
+    display: block;
+}
+
+/*------центральный блок, колеса---------*/
+
+.center.column {
+    background-color: white;
+    background-image: linear-gradient(to top, rgba(35, 75, 93, 0.24) 0%, rgba(201, 207, 209, 0.24) 100%);
+    border-radius: 3px;
+}
+
+.center.column > div {
+    margin-left: 6px;
+}
+
+.wheel_column {
+    float: left;
+    width: 32%;
+    margin-bottom: 70px;
+}
+
+
+
+
+/*----- конкретно колеса------*/
+figure {
+    width: 140px;
+    height: 186px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 1px;
+}
+
+figure > div {
+    width: 139px;
+    height: 129px;
+    background-color: white;
+    border: 1px solid #a4aeb1;
+    border-radius: 7px;
+}
+
+img {
+    padding-top: 6px;
+    margin: 0 auto;
+}
+
+h4 {
+    font-size: 15px;
+    color: #206988;
+    font-family: "Lucida Sans Unicode", Arial, sans-serif;
+}
+
+h6 {
+    font-size: 13px;
+    color: #1f2528;
+    font-family: "Lucida Sans Unicode", Arial, sans-serif;
+}
+
+figcaption {
+    color: #114165;
+    font-family: Arial, sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 16px;
+}
+
+figcaption > span {
+    font-size: 12px;
+}
+
+/*-------конец конкретно колес------*/
+
+
+
+
+
+
+
+
+
+
+
+
+

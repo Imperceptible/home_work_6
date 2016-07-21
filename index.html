@@ -8,273 +8,406 @@
 <body>
 <header>
     <!--телефоны-->
-    <div class="phone">
+    <div class="phones">
+            <img src="images/phone.png"/>
+            <span>(044)228-24-83 (093)757-38-32</span>
+        </div>
 
     </div>
     <!--форма авторизации-->
-    <div></div>
+    <div class="auth">
+        <form>
+            <input type="text" placeholder="логин">
+            <input type="password" placeholder="пароль">
+        </form>
+        <div><a href="#">вход | регистрация</a></div>
+        <div><a href="#">забыли пароль?</a></div>
+    </div>
     <!--три правые иконки-->
     <div></div>
 </header>
 <img src="images/blick.png" alt="main picture">
-<nav>
+<nav class="main_menu clearfix">
     <!--главная навигация-->
     <ul>
-        <li><a href="#">О КОМПАНИИ</a></li>
-        <li><a href="#">ОПЛАТА</a></li>
-        <li><a href="#">ДОСТАВКА</a></li>
-        <li><a href="#">СТАТЬИ</a> </li>
-        <li><a href="#">КОНТАКТЫ</a> </li>
+        <li class="main-menu_item"><a href="#">О КОМПАНИИ</a></li>
+        <li class="main-menu_item"><a href="#">ОПЛАТА</a></li>
+        <li class="main-menu_item"><a href="#">ДОСТАВКА</a></li>
+        <li class="main-menu_item"><a href="#">СТАТЬИ</a> </li>
+        <li class="main-menu_item"><a href="#">КОНТАКТЫ</a> </li>
     </ul>
     <!--информация о заказе-->
-    <div>
-
+    <div class="basket">
+        <div class="basket_item"><p>товаров:0</p> </div>
+        <div class="basket_item"><p>на сумму: 0,00грн.</p> </div>
     </div>
 </nav>
+<!--фильтры-->
+<div>
+    <!--&lt;!&ndash;поиск по автомобилю&ndash;&gt;-->
+    <!--<section>-->
+        <!--&lt;!&ndash;диски&ndash;&gt;-->
+        <!--<section>-->
+            <!--<form>-->
+                <!--<p>Марка авто:-->
+                    <!--<select>-->
+                        <!--<option></option>-->
+                        <!--<option>Пункт 1</option>-->
+                        <!--<option>Пункт 2</option>-->
+                        <!--<option>Пункт 3</option>-->
+                    <!--</select>-->
+                <!--</p>-->
+            <!--</form>-->
+            <!--<form>-->
+                <!--<p>Модель автомобиля:-->
+                    <!--<select>-->
+                        <!--<option></option>-->
+                        <!--<option>Пункт 1</option>-->
+                        <!--<option>Пункт 2</option>-->
+                        <!--<option>Пункт 3</option>-->
+                    <!--</select>-->
+                <!--</p>-->
+            <!--</form>-->
+            <!--<form>-->
+                <!--<p>Год выпуска автомобиля:-->
+                    <!--<select>-->
+                        <!--<option></option>-->
+                        <!--<option>1999</option>-->
+                        <!--<option>19910</option>-->
+                        <!--<option>19911</option>-->
+                    <!--</select>-->
+                <!--</p>-->
+            <!--</form>-->
+            <!--<form>-->
+                <!--<p>Комплектация:-->
+                    <!--<select>-->
+                        <!--<option></option>-->
+                        <!--<option>Пункт 1</option>-->
+                        <!--<option>Пункт 2</option>-->
+                        <!--<option>Пункт 3</option>-->
+                    <!--</select>-->
+                <!--</p>-->
+            <!--</form>-->
+
+        <!--</section>-->
+        <!--&lt;!&ndash;шины&ndash;&gt;-->
+        <!--<section>-->
+            <!--<form>-->
+                <!--<p>Марка авто:-->
+                    <!--<select>-->
+                        <!--<option></option>-->
+                        <!--<option>Пункт 1</option>-->
+                        <!--<option>Пункт 2</option>-->
+                        <!--<option>Пункт 3</option>-->
+                    <!--</select>-->
+                <!--</p>-->
+            <!--</form>-->
+            <!--<form>-->
+                <!--<p>Модель автомобиля:-->
+                    <!--<select>-->
+                        <!--<option></option>-->
+                        <!--<option>Пункт 1</option>-->
+                        <!--<option>Пункт 2</option>-->
+                        <!--<option>Пункт 3</option>-->
+                    <!--</select>-->
+                <!--</p>-->
+            <!--</form>-->
+            <!--<form>-->
+                <!--<p>Год выпуска автомобиля:-->
+                    <!--<select>-->
+                        <!--<option></option>-->
+                        <!--<option>1999</option>-->
+                        <!--<option>19910</option>-->
+                        <!--<option>19911</option>-->
+                    <!--</select>-->
+                <!--</p>-->
+            <!--</form>-->
+            <!--<form>-->
+                <!--<p>Комплектация:-->
+                    <!--<select>-->
+                        <!--<option></option>-->
+                        <!--<option>Пункт 1</option>-->
+                        <!--<option>Пункт 2</option>-->
+                        <!--<option>Пункт 3</option>-->
+                    <!--</select>-->
+                <!--</p>-->
+            <!--</form>-->
+
+        <!--</section>-->
+        <!--<p><a href="#">поиск...</a> </p>-->
+    <!--</section>-->
+    <!--&lt;!&ndash;поиск шин&ndash;&gt;-->
+    <!--<section>-->
+        <!--<form>-->
+            <!--<p>Размер-->
+                <!--<select>-->
+                    <!--<option>145</option>-->
+                    <!--<option>146</option>-->
+                    <!--<option>147</option>-->
+                <!--</select>-->
+                <!--/-->
+                <!--<select>-->
+                    <!--<option></option>-->
+                    <!--<option>146</option>-->
+                    <!--<option>147</option>-->
+                <!--</select>-->
+            <!--</p>-->
+        <!--</form>-->
+        <!--<form>-->
+            <!--<p>Сезон:-->
+                <!--<input type="checkbox">лето<br>-->
+                <!--<input type="checkbox">зима<br>-->
+                <!--<input type="checkbox">всесез<br>-->
+            <!--</p>-->
+        <!--</form>-->
+        <!--<p><a href="#">поиск...</a> </p>-->
+    <!--</section>-->
+    <!--поиск дисков-->
+    <!--<section>-->
+        <!--<form>-->
+            <!--<p>Диаметр диска:-->
+                <!--<select>-->
+                    <!--<option>14</option>-->
+                    <!--<option>15</option>-->
+                    <!--<option>16</option>-->
+                <!--</select>-->
+            <!--</p>-->
+        <!--</form>-->
+        <!--<form>-->
+            <!--<p>Количество крепежных отверстийЖ-->
+                <!--<select>-->
+                    <!--<option>3</option>-->
+                    <!--<option>4</option>-->
+                    <!--<option>5</option>-->
+                <!--</select>-->
+            <!--</p>-->
+        <!--</form>-->
+        <!--<form>-->
+            <!--<p>Диаметр расположения крепежных отверстий:-->
+                <!--<select>-->
+                    <!--<option>12</option>-->
+                    <!--<option>13</option>-->
+                    <!--<option>14</option>-->
+                <!--</select>-->
+            <!--</p>-->
+        <!--</form>-->
+        <!--<form>-->
+            <!--<p>ДЦО (диаметр центрального отверстия):-->
+                <!--<select>-->
+                    <!--<option>12</option>-->
+                    <!--<option>13</option>-->
+                    <!--<option>14</option>-->
+                <!--</select>-->
+            <!--</p>-->
+        <!--</form>-->
+        <!--<form>-->
+            <!--<p>ЕТ (вылет диска):-->
+                <!--<select>-->
+                    <!--<option>12</option>-->
+                    <!--<option>13</option>-->
+                    <!--<option>14</option>-->
+                <!--</select>-->
+            <!--</p>-->
+        <!--</form>-->
+        <!--<p><a href="#">поиск...</a> </p>-->
+    <!--</section>-->
+</div>
 <main>
-    <!--фильтры-->
-    <div>
-        <!--поиск по автомобилю-->
-        <section>
-            <!--диски-->
-            <section>
-            <form>
-                <p>Марка авто:
-                    <select>
-                        <option></option>
-                        <option>Пункт 1</option>
-                        <option>Пункт 2</option>
-                        <option>Пункт 3</option>
-                    </select>
-                </p>
-            </form>
-            <form>
-                <p>Модель автомобиля:
-                    <select>
-                        <option></option>
-                        <option>Пункт 1</option>
-                        <option>Пункт 2</option>
-                        <option>Пункт 3</option>
-                    </select>
-                </p>
-            </form>
-            <form>
-                <p>Год выпуска автомобиля:
-                    <select>
-                        <option></option>
-                        <option>1999</option>
-                        <option>19910</option>
-                        <option>19911</option>
-                    </select>
-                </p>
-            </form>
-            <form>
-                <p>Комплектация:
-                    <select>
-                        <option></option>
-                        <option>Пункт 1</option>
-                        <option>Пункт 2</option>
-                        <option>Пункт 3</option>
-                    </select>
-                </p>
-            </form>
+    <div class="right_fon clearfix">
+        <div class="center_fon">
+            <div class=""></div><!-- бордер правого блока -->
+            <div class="left_fon">
+                <div class=""></div><!-- бордер левого блока -->
+                <div class="left column">
+                    <!--каталог продукции-->
+                    <aside>
+                        <ul class="catalog">
+                        <!--шины-->
+                            <li>ШИНЫ<ul class="catalog_submenu">
+                                <li><a href="#">Наименование 1</a> </li>
+                                <li><a href="#">Наименование 2</a> </li>
+                                <li><a href="#">Наименование 3</a> </li>
+                                <li><a href="#">Наименование 4</a> </li>
+                            </ul></li>
+                            <!--Диски-->
+                            <li>ДИСКИ<ul class="catalog_submenu">
+                                <li><a href="#">Наименование 1</a> </li>
+                                <li><a href="#">Наименование 2</a> </li>
+                                <li><a href="#">Наименование 3</a> </li>
+                                <li><a href="#">Наименование 4</a> </li>
+                            </ul></li>
+                            <!--болты-->
+                            <li>БОЛТЫ<ul class="catalog_submenu">
+                                <li><a href="#">Наименование 1</a> </li>
+                                <li><a href="#">Наименование 2</a> </li>
+                                <li><a href="#">Наименование 3</a> </li>
+                                <li><a href="#">Наименование 4</a> </li>
+                            </ul></li>
+                        </ul>
+                    </aside>
+                </div>
+                <div class="center column">
+                    <!--каталог колес, считаем столбиками-->
+                    <div>
+                        <div class="wheel_column">
+                            <figure class="top"><!--колесо 1-->
+                                <h4>Goodyear</h4>
+                                <h6>Ultra Grip Extreme</h6>
+                                <div><img src="images/wheel1.png"></div>
+                                <figcaption>90.00 <span>грн.</span></figcaption>
+                            </figure>
+                            <figure class="middle"><!--колесо 2-->
+                                <h4>Goodyear</h4>
+                                <h6>Ultra Grip Extreme</h6>
+                                <div><img src="images/wheel1.png"></div>
+                                <figcaption>90.00 <span>грн.</span></figcaption>
+                            </figure>
+                            <figure class="bottom"><!--колесо 3-->
+                                <h4>Goodyear</h4>
+                                <h6>Ultra Grip Extreme</h6>
+                                <div><img src="images/wheel1.png"></div>
+                                <figcaption>90.00 <span>грн.</span></figcaption>
+                            </figure>
+                        </div>
+                        <div class="wheel_column">
+                            <figure class="top"><!--колесо 4-->
+                                <h4>Nokian</h4>
+                                <h6>Hakkapeliitta R</h6>
+                                <div><img src="images/wheel1.png"></div>
+                                <figcaption>115.00 <span>грн.</span></figcaption>
+                            </figure>
+                            <figure class="middle"><!--колесо 5-->
+                                <h4>Nokian</h4>
+                                <h6>Hakkapeliitta R</h6>
+                                <div><img src="images/wheel1.png"></div>
+                                <figcaption>115.00 <span>грн.</span></figcaption>
+                            </figure>
+                            <figure class="bottom"><!--колесо 6-->
+                                <h4>Nokian</h4>
+                                <h6>Hakkapeliitta R</h6>
+                                <div><img src="images/wheel1.png"></div>
+                                <figcaption>115.00 <span>грн.</span></figcaption>
+                            </figure>
+                            </div>
+                        <div class="wheel_column">
+                            <figure class="top"><!--колесо 7-->
+                                <h4>Hankook</h4>
+                                <h6>K 708 155/65 R14</h6>
+                                <div><img src="images/wheel1.png"></div>
+                                <figcaption>393.00 <span>грн.</span></figcaption>
+                            </figure>
+                            <figure class="middle"><!--колесо 8-->
+                                <h4>Hankook</h4>
+                                <h6>K 708 155/65 R14</h6>
+                                <div><img src="images/wheel1.png"></div>
+                                <figcaption>393.00 <span>грн.</span></figcaption>
+                            </figure>
+                            <figure class="bottom"><!--колесо 9-->
+                                <h4>Hankook</h4>
+                                <h6>K 708 155/65 R14</h6>
+                                <div><img src="images/wheel1.png"></div>
+                                <figcaption>393.00 <span>грн.</span></figcaption>
+                            </figure>
+                        </div>
 
-            </section>
-            <!--шины-->
-            <section>
-                <form>
-                    <p>Марка авто:
-                        <select>
-                            <option></option>
-                            <option>Пункт 1</option>
-                            <option>Пункт 2</option>
-                            <option>Пункт 3</option>
-                        </select>
-                    </p>
-                </form>
-                <form>
-                    <p>Модель автомобиля:
-                        <select>
-                            <option></option>
-                            <option>Пункт 1</option>
-                            <option>Пункт 2</option>
-                            <option>Пункт 3</option>
-                        </select>
-                    </p>
-                </form>
-                <form>
-                    <p>Год выпуска автомобиля:
-                        <select>
-                            <option></option>
-                            <option>1999</option>
-                            <option>19910</option>
-                            <option>19911</option>
-                        </select>
-                    </p>
-                </form>
-                <form>
-                    <p>Комплектация:
-                        <select>
-                            <option></option>
-                            <option>Пункт 1</option>
-                            <option>Пункт 2</option>
-                            <option>Пункт 3</option>
-                        </select>
-                    </p>
-                </form>
-
-            </section>
-            <p><a href="#">поиск...</a> </p>
-        </section>
-        <!--поиск шин-->
-        <section>
-            <form>
-                <p>Размер
-                <select>
-                    <option>145</option>
-                    <option>146</option>
-                    <option>147</option>
-                </select>
-                    /
-                <select>
-                    <option></option>
-                    <option>146</option>
-                    <option>147</option>
-                </select>
-                </p>
-            </form>
-            <form>
-                <p>Сезон:
-                    <input type="checkbox">лето<br>
-                    <input type="checkbox">зима<br>
-                    <input type="checkbox">всесез<br>
-                </p>
-            </form>
-            <p><a href="#">поиск...</a> </p>
-        </section>
-        <!--поиск дисков-->
-        <section>
-            <form>
-                <p>Диаметр диска:
-                <select>
-                    <option>14</option>
-                    <option>15</option>
-                    <option>16</option>
-                </select>
-                </p>
-            </form>
-            <form>
-                <p>Количество крепежных отверстийЖ
-                <select>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                </select>
-                </p>
-            </form>
-            <form>
-                <p>Диаметр расположения крепежных отверстий:
-                <select>
-                    <option>12</option>
-                    <option>13</option>
-                    <option>14</option>
-                </select>
-                </p>
-            </form>
-            <form>
-                <p>ДЦО (диаметр центрального отверстия):
-                <select>
-                    <option>12</option>
-                    <option>13</option>
-                    <option>14</option>
-                </select>
-                </p>
-            </form>
-            <form>
-                <p>ЕТ (вылет диска):
-                <select>
-                    <option>12</option>
-                    <option>13</option>
-                    <option>14</option>
-                </select>
-                </p>
-            </form>
-            <p><a href="#">поиск...</a> </p>
-        </section>
+                    </div>
+                </div>
+                <div class="right column">
+                    <!--бренды-->
+                    <aside>
+                        <ul class="brends">
+                            <li>ШИНЫ<ul class="brends_submenu">
+                                <li><a href="#">Бренд 1</a> </li>
+                                <li><a href="#">Бренд 2</a> </li>
+                                <li><a href="#">Бренд 3</a> </li>
+                            </ul></li>
+                            <li>ДИСКИ<ul class="brends_submenu">
+                                <li><a href="#">Бренд 1</a> </li>
+                                <li><a href="#">Бренд 2</a> </li>
+                                <li><a href="#">Бренд 3</a> </li>
+                            </ul></li>
+                        </ul>
+                    </aside>
+                </div>
+            </div>
+         </div>
     </div>
-    <!--весь блок с колесами-->
+
     <div>
-        <!--каталог продукции-->
-        <aside>
-            <ul>
-            <!--шины-->
-                <li>ШИНЫ<ul>
-                    <li><a href="#">Наименование 1</a> </li>
-                    <li><a href="#">Наименование 2</a> </li>
-                    <li><a href="#">Наименование 3</a> </li>
-                    <li><a href="#">Наименование 4</a> </li>
-                </ul></li>
-                <!--Диски-->
-                <li>ДИСКИ<ul>
-                    <li><a href="#">Наименование 1</a> </li>
-                    <li><a href="#">Наименование 2</a> </li>
-                    <li><a href="#">Наименование 3</a> </li>
-                    <li><a href="#">Наименование 4</a> </li>
-                </ul></li>
-                <!--болты-->
-                <li>БОЛТЫ<ul>
-                    <li><a href="#">Наименование 1</a> </li>
-                    <li><a href="#">Наименование 2</a> </li>
-                    <li><a href="#">Наименование 3</a> </li>
-                    <li><a href="#">Наименование 4</a> </li>
-                </ul></li>
-            </ul>
-        </aside>
-        <!--каталог колес-->
-        <div>
-            <figure><!--колесо 1-->
-                <figcaption></figcaption>
-            </figure>
-            <figure><!--колесо 2-->
-                <figcaption></figcaption>
-            </figure>
-            <figure><!--колесо 3-->
-                <figcaption></figcaption>
-            </figure>
-            <figure><!--колесо 4-->
-                <figcaption></figcaption>
-            </figure>
-            <figure><!--колесо 5-->
-                <figcaption></figcaption>
-            </figure>
-            <figure><!--колесо 6-->
-                <figcaption></figcaption>
-            </figure>
-            <figure><!--колесо 7-->
-                <figcaption></figcaption>
-            </figure>
-            <figure><!--колесо 8-->
-                <figcaption></figcaption>
-            </figure>
-            <figure><!--колесо 9-->
-                <figcaption></figcaption>
-            </figure>
-        </div>
-        <!--бренды-->
-        <aside>
-            <ul>
-                <li>ШИНЫ<ul>
-                    <li><a href="#">Бренд 1</a> </li>
-                    <li><a href="#">Бренд 2</a> </li>
-                    <li><a href="#">Бренд 3</a> </li>
-                </ul></li>
-                <li>ДИСКИ<ul>
-                    <li><a href="#">Бренд 1</a> </li>
-                    <li><a href="#">Бренд 2</a> </li>
-                    <li><a href="#">Бренд 3</a> </li>
-                </ul></li>
-            </ul>
-        </aside>
+    <!--&lt;!&ndash;весь блок с колесами&ndash;&gt;-->
+    <!--<div>-->
+        <!--&lt;!&ndash;каталог продукции&ndash;&gt;-->
+        <!--<aside>-->
+            <!--<ul>-->
+            <!--&lt;!&ndash;шины&ndash;&gt;-->
+                <!--<li>ШИНЫ<ul>-->
+                    <!--<li><a href="#">Наименование 1</a> </li>-->
+                    <!--<li><a href="#">Наименование 2</a> </li>-->
+                    <!--<li><a href="#">Наименование 3</a> </li>-->
+                    <!--<li><a href="#">Наименование 4</a> </li>-->
+                <!--</ul></li>-->
+                <!--&lt;!&ndash;Диски&ndash;&gt;-->
+                <!--<li>ДИСКИ<ul>-->
+                    <!--<li><a href="#">Наименование 1</a> </li>-->
+                    <!--<li><a href="#">Наименование 2</a> </li>-->
+                    <!--<li><a href="#">Наименование 3</a> </li>-->
+                    <!--<li><a href="#">Наименование 4</a> </li>-->
+                <!--</ul></li>-->
+                <!--&lt;!&ndash;болты&ndash;&gt;-->
+                <!--<li>БОЛТЫ<ul>-->
+                    <!--<li><a href="#">Наименование 1</a> </li>-->
+                    <!--<li><a href="#">Наименование 2</a> </li>-->
+                    <!--<li><a href="#">Наименование 3</a> </li>-->
+                    <!--<li><a href="#">Наименование 4</a> </li>-->
+                <!--</ul></li>-->
+            <!--</ul>-->
+        <!--</aside>-->
+        <!--&lt;!&ndash;каталог колес&ndash;&gt;-->
+        <!--<div>-->
+            <!--<figure>&lt;!&ndash;колесо 1&ndash;&gt;-->
+                <!--<figcaption></figcaption>-->
+            <!--</figure>-->
+            <!--<figure>&lt;!&ndash;колесо 2&ndash;&gt;-->
+                <!--<figcaption></figcaption>-->
+            <!--</figure>-->
+            <!--<figure>&lt;!&ndash;колесо 3&ndash;&gt;-->
+                <!--<figcaption></figcaption>-->
+            <!--</figure>-->
+            <!--<figure>&lt;!&ndash;колесо 4&ndash;&gt;-->
+                <!--<figcaption></figcaption>-->
+            <!--</figure>-->
+            <!--<figure>&lt;!&ndash;колесо 5&ndash;&gt;-->
+                <!--<figcaption></figcaption>-->
+            <!--</figure>-->
+            <!--<figure>&lt;!&ndash;колесо 6&ndash;&gt;-->
+                <!--<figcaption></figcaption>-->
+            <!--</figure>-->
+            <!--<figure>&lt;!&ndash;колесо 7&ndash;&gt;-->
+                <!--<figcaption></figcaption>-->
+            <!--</figure>-->
+            <!--<figure>&lt;!&ndash;колесо 8&ndash;&gt;-->
+                <!--<figcaption></figcaption>-->
+            <!--</figure>-->
+            <!--<figure>&lt;!&ndash;колесо 9&ndash;&gt;-->
+                <!--<figcaption></figcaption>-->
+            <!--</figure>-->
+        <!--</div>-->
+        <!--&lt;!&ndash;бренды&ndash;&gt;-->
+        <!--<aside>-->
+            <!--<ul>-->
+                <!--<li>ШИНЫ<ul>-->
+                    <!--<li><a href="#">Бренд 1</a> </li>-->
+                    <!--<li><a href="#">Бренд 2</a> </li>-->
+                    <!--<li><a href="#">Бренд 3</a> </li>-->
+                <!--</ul></li>-->
+                <!--<li>ДИСКИ<ul>-->
+                    <!--<li><a href="#">Бренд 1</a> </li>-->
+                    <!--<li><a href="#">Бренд 2</a> </li>-->
+                    <!--<li><a href="#">Бренд 3</a> </li>-->
+                <!--</ul></li>-->
+            <!--</ul>-->
+        <!--</aside>-->
+    <!--</div>-->
     </div>
 
 </main>
