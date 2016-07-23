@@ -134,9 +134,9 @@ h2 {
     background-image: url("../images/doc.png");
     background-position: 4px center;
     background-repeat: no-repeat;
-    width: 150px;
+    width: 153px;
     height: 27px;
-    padding-left: 30px;
+    padding-left: 28px;
     line-height: 28px;
     margin-bottom: 13px;
 }
@@ -151,6 +151,7 @@ h3 {
     background-color: white;
     border: 1px solid #79878d;
     border-radius: 20px;
+    margin-top: 13px;
 }
 
 h3 > div {
@@ -222,8 +223,25 @@ h3 > span {
 
 /*-------------каталог брендов------------*/
 
+.right.column > form {
+    margin-left: 6px;
+}
 
+.brand_submenu {
+    display: inline-block;
+    height: 14px;
+    margin-left: 8px;
+    margin-top: 10px;
+    color: #465961;
+    font-family: "Lucida Sans Unicode";
+    font-size: 13px;
+    font-weight: 400;
+    /*line-height: 25px;*/
+}
 
+.brand_submenu > input {
+    margin-right: 20px;
+}
 
 /*------центральный блок, колеса---------*/
 
