@@ -493,7 +493,8 @@ figcaption > span {
 /*-------конец конкретно колес------*/
 
 .brands_img {
-    margin: 25px auto;
+    margin: 0 auto;
+    margin-top: 34px;
     text-align: center;
 }
 
@@ -501,14 +502,15 @@ figcaption > span {
 /*--------подвал--------*/
 
 footer {
+    margin-top: 20px;
     height: 101px;
     background-color: #213a4d;
     border: 1px solid #242a3c;
 }
 
 footer > div {
-    margin: 15px auto;
-    width: 300px;
+    margin: 10px auto;
+    width: 320px;
     height: 11px;
 }
 
@@ -524,7 +526,7 @@ footer > ul {
 .footer_item > a {
     text-decoration: none;
     font-family: Arial;
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 400;
     line-height: 16px;
     color: #bec6c9;
