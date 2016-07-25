@@ -9,37 +9,44 @@
 <header>
     <!--телефоны-->
     <div class="phones">
-            <img src="images/phone.png"/>
-            <span>(044)228-24-83 (093)757-38-32</span>
+            <!--<img src="images/phone.png"/>-->
+            <span>(044)123-45-67</span>
+            <span> (044)567-89-10</span>
         </div>
 
     </div>
     <!--форма авторизации-->
     <div class="auth">
+        <img src="images/auth.png" alt="etr">
         <form>
             <input type="text" placeholder="логин">
             <input type="password" placeholder="пароль">
         </form>
-        <div><a href="#">вход | регистрация</a></div>
-        <div><a href="#">забыли пароль?</a></div>
+        <div class="forgot"><a href="#">забыли пароль?</a></div>
+        <div class="enter"><a href="#">вход | регистрация</a></div>
+
     </div>
     <!--три правые иконки-->
-    <div></div>
+    <div class="three_icons">
+        <a href="#"><img src="images/home.png" alt="home"></a>
+        <a href="#"><img src="images/map.png" alt="map"></a>
+        <a href="#"><img src="images/mail.png" alt="mail"></a>
+    </div>
 </header>
 <img src="images/blick.png" alt="main picture">
 <nav class="main_menu clearfix">
     <!--главная навигация-->
     <ul>
-        <li class="main-menu_item"><a href="#">О КОМПАНИИ</a></li>
-        <li class="main-menu_item"><a href="#">ОПЛАТА</a></li>
-        <li class="main-menu_item"><a href="#">ДОСТАВКА</a></li>
-        <li class="main-menu_item"><a href="#">СТАТЬИ</a> </li>
-        <li class="main-menu_item"><a href="#">КОНТАКТЫ</a> </li>
+        <li class="main-menu_item text_button_1"><a class="" href="#">О КОМПАНИ</a></li>
+        <li class="main-menu_item text_button_2"><a class="" href="#">ОПЛАТА</a></li>
+        <li class="main-menu_item text_button_3"><a class="" href="#">ДОСТАВКА</a></li>
+        <li class="main-menu_item text_button_4"><a class="" href="#">СТАТЬИ</a> </li>
+        <li class="main-menu_item text_button_5"><a class="" href="#">КОНТАКТЫ</a> </li>
     </ul>
     <!--информация о заказе-->
     <div class="basket">
-        <div class="basket_item"><p>товаров:0</p> </div>
-        <div class="basket_item"><p>на сумму: 0,00грн.</p> </div>
+        <div class="basket_item prod"><p>товаров:<span>0</span></p> </div>
+        <div class="basket_item sum"><p>на сумму: <span>0,00грн.</span></p> </div>
     </div>
 </nav>
 <!--фильтры-->

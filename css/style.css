@@ -16,26 +16,135 @@
 
 
 body {
+    position: relative;
     width: 910px;
     margin: 0 auto;
 }
 
 header {
-    height: 50px;
+    position: relative;
+    width: 100%;
+    height: 54px;
     float: left;
 }
 
-.phones > img {
+.phones {
     float: left;
-    width: 20px;
+    position: relative;
+    left: 4px;
+    top: 20px;
+    padding-left: 28px;
+    background-image: url("../images/phone.png");
+    background-position: 4px center;
+    background-repeat: no-repeat;
 }
+
+.phones span {
+    color: #5e696d;
+    font-family: Arial;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+/*------------формы авторизации----------*/
 
 .auth {
+    position: relative;
     float: left;
+    left: 20px;
+    width: 495px;
+    height: 26px;
+    margin-top: 18px;
+    background-color: #b1bcc0;
+    background-image: linear-gradient(180deg, #206988 0%, #114165 59%, #0c3256 100%);
+    border-radius: 4px;
+    box-shadow: 1px 2px 3px rgba(150, 150, 150, 0.75);
+}
+
+.auth img {
+    position: relative;
+    left: -228px;
+    top: 4px;
+}
+
+.auth > form {
+    float: left;
+    position: relative;
+    left: 26px;
+    top: 4px;
+
+}
+
+.auth > form > input {
+    float: left;
+    width: 109px;
+    height: 15px;
+    background-color: white;
+    border: 1px solid #9ba1a3;
+}
+
+.auth > form > input:first-child {
+    margin-right: 6px;
+}
+
+.auth > form > input[placeholder] {
+    color: #97a2a6;
+    font-family: "Lucida Sans Unicode";
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 20px;
+    padding-left: 4px;
+}
+
+.auth > div {
+    float: right;
+}
+
+.enter {
+    margin-right: 18px;
+}
+
+.enter a {
+    color: white;
+    font-family: "Lucida Sans Unicode";
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+.forgot {
+    margin-right: 10px;
+}
+
+.forgot a {
+    color: #bfbfbf;
+    font-family: "Lucida Sans Unicode";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 25px;
+    text-decoration: underline;
 }
 
 
 
+/*-----------три иконки справа---------*/
+
+.three_icons {
+    float: right;
+    margin: 19px 7px 0 6px;
+    text-align: center;
+    width: 76px;
+    height: 20px;
+    background-color: white;
+    border: 1px solid #bdc4c7;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px 1px rgba(189, 196, 199, 0.58);
+}
+.three_icons > a {
+    height: 100%;
+    padding: 2px;
+}
 
 
 /*-------------------меню--------------------*/
@@ -43,34 +152,109 @@ header {
 nav {
     width: 910px;
     height: 32px;
+    margin-top: 2px;
     background-color: white;
-    background-image: linear-gradient(to top, black 0%, #576068 100%);
+    background-image: linear-gradient(to top, black 75%, #576068 100%);
+    border: 1px solid #0d1642;
     border-radius: 5px;
-    border: solid 1px #2d355b;
+    box-shadow: 1.5px 2.6px 5px rgba(0, 0, 0, 0.75);
+}
+
+nav ul {
+    margin-left: 125px;
+    margin-top: 3px;
+    width: 60%;
 }
 
 .main-menu_item {
     display: block;
-    padding: 5px 20px;
+    height: 24px;
+    padding: 0px 0px;
     float: left;
 }
 
 .main-menu_item > a {
-    font-size: 14px;
+    font-size: 13.5px;
     font-family: "Lucida Sans Unicode";
     font-weight: 400;
     color: white;
     text-decoration: none;
+    line-height: 20px;
+}
+.main-menu_item:hover {
+    color: white;
+    background-color: #f60303;
+    background-image: linear-gradient(180deg, #206988 0%, #114165 59%, #0c3256 100%);
+    border-radius: 20px;
+}
+/*-------выравнивание кнопок меню поштучно---------*/
+.text_button_1{
+    padding: 2px 19px 0 21px;
+}
+.text_button_2{
+    padding: 2px 17px 0 17px;
+}
+.text_button_3{
+    padding: 2px 16px 0 14px;
+}
+.text_button_4{
+    padding: 2px 14px 0 15px;
+}
+.text_button_5{
+    padding: 2px 12px 0 12px;
 }
 
+
+
+/*-------корзина--------*/
+
 .basket {
+    position: relative;
     float: right;
+    width: 25%;
+    height: 30px;
+    background-image: url("../images/basket.png");
+    background-position: 0 4px;
+    background-repeat: no-repeat;
 }
 
 .basket_item {
-    float: left
+    position: relative;
+    float: left;
+    display: inline-block;
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: 400;
+    color: #8a9296;
 }
 
+.basket_item span {
+    position: relative;
+    color: #0d5a8f;
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.prod {
+    left: 28px;
+    top: 2px;
+}
+
+.sum {
+    left: 42px;
+    top: 2px;
+}
+
+.prod span {
+    right: -1px;
+    top: 2px
+}
+
+.sum span {
+    left: 7px;
+    top: 2px;
+}
 
 /*---------------- весь блок с колесами и боковыми меню------------------*/
 
@@ -309,7 +493,7 @@ figcaption > span {
 /*-------конец конкретно колес------*/
 
 .brands_img {
-    margin: 15px auto;
+    margin: 25px auto;
     text-align: center;
 }
 
@@ -356,7 +540,7 @@ footer > ul {
     border-left: solid 1px #bec6c9;
 }
 
-.footer_item:first-child {
+.footer_item:first-child > a > span {
     border-left: none;
 }
 
