@@ -526,52 +526,50 @@ main {
 
 /*--позиционирование левого меню--*/
         /*заголовок*/
-.left.column h2 {top: 3px;left: 0px;}
+.left.column h2 {top: 2px;left: 0px;}
 
         /*шины*/
-h3.tire {top: 17px;left: 1px;}
+h3.tire {top: 15px;left: 1px;}
 
         /*диски*/
-h3.disk{top: 60px;left: 1px;}
+h3.disk{top: 58px;left: 1px;}
 
         /*болты*/
-h3.bolt{top: 103px;left: 1px;}
+h3.bolt{top: 100px;left: 1px;}
 
         /*пункты меню поштучно*/
-._1{top: 18px;left: 39px;}
-._2{top: 31px;left: 39px;}
-._3{top: 42px;left: 39px;}
-._4{top: 54px;left: 39px;}
-._5{top: 63px;left: 39px;}
-._6{top: 73px;left: 39px;}
-._7{top: 84px;left: 39px;}
-._8{top: 96px;left: 39px;}
-._9{top: 105px;left: 39px;}
-._10{top: 116px;left: 39px;}
-._11{top: 128px;left: 39px;}
-._12{top: 139px;left: 39px;}
+._1{top: 16px;left: 39px;}
+._2{top: 28px;left: 39px;}
+._3{top: 40px;left: 39px;}
+._4{top: 51px;left: 39px;}
+._5{top: 59px;left: 39px;}
+._6{top: 71px;left: 39px;}
+._7{top: 81px;left: 39px;}
+._8{top: 94px;left: 39px;}
+._9{top: 102px;left: 39px;}
+._10{top: 113px;left: 39px;}
+._11{top: 125px;left: 39px;}
+._12{top: 136px;left: 39px;}
 
 
 /*--позиционирование правого меню--*/
         /*заголовок*/
-.right.column h2 {top: 1px;left: 8px;}
+.right.column h2 {top: 0px;left: 8px;}
 
         /*шины*/
-h3.tire_chk {top: 16px;left: 22px;}
+h3.tire_chk {top: 14px;left: 22px;}
 
         /*диски*/
-h3.disk_chk{top: 27px;left: 22px;}
+h3.disk_chk{top: 24px;left: 22px;}
 
 
         /*чекбоксы поштучно*/
-.chekbox_1{top: 18px;left: 22px;}
-.chekbox_2{top: 18px;left: 22px;}
-.chekbox_3{top: 18px;left: 22px;}
-.chekbox_4{top: 31px;left: 22px;}
-.chekbox_5{top: 31px;left: 22px;}
-.chekbox_6{top: 31px;left: 22px;}
-
-
+.chekbox_1{top: 16px;left: 22px;}
+.chekbox_2{top: 16px;left: 22px;}
+.chekbox_3{top: 16px;left: 22px;}
+.chekbox_4{top: 28px;left: 22px;}
+.chekbox_5{top: 28px;left: 22px;}
+.chekbox_6{top: 28px;left: 22px;}
 
 
 /*------центральный блок, колеса---------*/
@@ -581,70 +579,74 @@ h3.disk_chk{top: 27px;left: 22px;}
     background-image: linear-gradient(to top, rgba(35, 75, 93, 0.24) 0%, rgba(201, 207, 209, 0.24) 100%);
     border-radius: 3px;
 }
-
-.center.column > div {
-    margin-left: 6px;
-}
-
-.wheel_column {
-    float: left;
-    width: 32%;
-    margin-bottom: 70px;
-}
-
-
-
-
-/*----- конкретно колеса------*/
 figure {
-    width: 140px;
-    height: 186px;
-    margin: 0 auto;
-    text-align: center;
-    margin-bottom: 1px;
+    position: absolute;
 }
-
-figure > div {
-    width: 139px;
-    height: 129px;
+figure > h4 {
+    font-family: "Lucida Sans Unicode";
+    font-weight: 400;
+    line-height: 15px;
+    color: #206988;
+    font-size: 15px;
+    text-align: center;
+}
+figure > h6 {
+    font-family: "Lucida Sans Unicode";
+    font-weight: 400;
+    line-height: 13px;
+    color: #1f2528;
+    font-size: 13px;
+    text-align: center;
+}
+figure div {
+    width: 107px;
+    height: 122px;
     background-color: white;
     border: 1px solid #a4aeb1;
     border-radius: 7px;
+    padding-left: 29px;
+    padding-top: 5px;
 }
-
-
-h4 {
-    font-size: 15px;
-    color: #206988;
-    font-family: "Lucida Sans Unicode", Arial, sans-serif;
-}
-
-h6 {
-    font-size: 13px;
-    color: #1f2528;
-    font-family: "Lucida Sans Unicode", Arial, sans-serif;
-}
-
 figcaption {
+    display: block;
+    position: relative;
     color: #114165;
-    font-family: Arial, sans-serif;
+    font-family: Arial;
     font-weight: 700;
     font-style: italic;
-    font-size: 16px;
+    line-height: 10px;
+    font-size: 17px;
+    left: 37px;
+    top: 7px;
 }
-
 figcaption > span {
-    font-size: 12px;
+    font-size: 13px;
 }
+/*--позиционирование колес--*/
+.wheel_1{top: 14px;left: 23px;}
+.wheel_2{top: 216px;left: 23px;}
+.wheel_3{top: 420px;left: 23px;}
+.wheel_4{top: 14px;left: 191px;}
+.wheel_5{top: 216px;left: 191px;}
+.wheel_6{top: 420px;left: 191px;}
+.wheel_7{top: 14px;left: 359px;}
+.wheel_8{top: 216px;left: 359px;}
+.wheel_9{top: 420px;left: 359px;}
 
-/*-------конец конкретно колес------*/
+/*----- корректировки поштучно------*/
+.wheel_4 figcaption,
+.wheel_5 figcaption,
+.wheel_6 figcaption,
+.wheel_7 figcaption,
+.wheel_8 figcaption,
+.wheel_9 figcaption{left: 33px;}
+
+/*-------конец колес------*/
 
 .brands_img {
-    margin: 0 auto;
-    margin-top: 34px;
     text-align: center;
+    margin-top: 36px;
 }
-
 
 /*--------подвал--------*/
 
