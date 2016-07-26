@@ -255,8 +255,8 @@ nav ul {
     left: 7px;
     top: 2px;
 }
-
-/*---------------- весь блок с колесами и боковыми меню------------------*/
+/*-------------------------------------------------------------------------------------------------------*/
+/*--расположение всего блока с колесами и боковыми меню--*/
 
 main {
     overflow: hidden;
@@ -300,32 +300,37 @@ main {
     float: left;
     position: relative;
     left: 79%;
+    height: 627px;
     overflow: hidden;
 }
+.catalog {
+    height: 600px;
+}
+/*---------------------------------------------------------------------------------*/
+/*--отрисовка пунктов меню правого/левого--*/
 
-
-/*------------- каталог продукции----------*/
-
+        /*--каталог продукции/бренды--*/
 h2 {
+    position: relative;
     display: block;
     color: #114165;
     font-family: "Lucida Sans Unicode", Arial, sans-serif;
-    font-size: 13px;
+    font-size: 12.6px;
     font-weight: 400;
     border: 1px solid #79878d;
     border-radius: 20px;
     box-shadow: 2px 3px 3px rgba(150, 150, 150, 0.75);
     background-image: url("../images/doc.png");
-    background-position: 4px center;
+    background-position: 2px center;
     background-repeat: no-repeat;
     width: 153px;
-    height: 27px;
+    height: 25px;
     padding-left: 28px;
     line-height: 28px;
-    margin-bottom: 13px;
 }
-
+        /*--подразделы шины/диски/болты слева, шины/диски справа--*/
 h3 {
+    position: relative;
     color: #114165;
     font-family: "Lucida Sans Unicode", Arial, sans-serif;
     font-size: 14px;
@@ -335,9 +340,7 @@ h3 {
     background-color: white;
     border: 1px solid #79878d;
     border-radius: 20px;
-    margin-top: 13px;
 }
-
 h3 > div {
     display: inline-block;
     box-sizing: border-box;
@@ -351,20 +354,36 @@ h3 > div {
     margin-top: 3px;
     margin-right: 4px;
 }
-
 h3 > span {
     position: relative;
     top: -5px
 }
-
+        /*--пункты левого меню и их .hover--*/
 .catalog_submenu {
+    position: relative;
     display: block;
     height: 14px;
-    margin-left: 30px;
-    margin-top: 10px;
-    padding-bottom: 4px;
 }
-
+.catalog_submenu > a {
+    color: #465961;
+    font-family: "Lucida Sans Unicode", Arial, sans-serif;
+    font-size: 12.8px;
+    font-weight: 400;
+    text-decoration: none;
+}
+.catalog_submenu span {/*кружок пункта меню*/
+     display: inline-block;
+     box-sizing: border-box;
+     width: 7px;
+     height: 7px;
+     border: 2px solid #79878d;
+     -webkit-border-radius: 100%;
+     -moz-border-radius: 100%;
+     border-radius: 100%;
+     position: relative;
+     /*top: -1px;*/
+     left: -2px;
+ }
 .catalog_submenu:hover a {
     box-sizing: border-box;
     color: #0c3256;
@@ -374,58 +393,80 @@ h3 > span {
     font-style: italic;
     text-decoration: underline;
 }
-
 .catalog_submenu:hover span {
-    box-sizing: border-box;
     border: 2px solid #313a55;
 }
+        /*--кастом чекбоксов справа--*/
 
-.catalog_submenu > a {
-    color: #465961;
-    font-family: "Lucida Sans Unicode", Arial, sans-serif;
-    font-size: 13px;
-    font-weight: 400;
-    text-decoration: none;
-}
+/*--добавить--*/
 
-.catalog_submenu > a > span {
-    display: inline-block;
-    box-sizing: border-box;
-    width: 7px;
-    height: 7px;
-    border: 2px solid #79878d;
-    -webkit-border-radius: 100%;
-    -moz-border-radius: 100%;
-    border-radius: 100%;
-    position: relative;
-    top: -1px;
-    left: -3px;
-}
+
+/*--позиционирование левого меню--*/
+        /*заголовок*/
+.left.column h2 {top: 3px;left: 0px;}
+        /*шины*/
+h3.tire {top: 17px;left: 1px;}
+        /*диски*/
+h3.disk{top: 60px;left: 1px;}
+        /*болты*/
+h3.bolt{top: 103px;left: 1px;}
+        /*пункты меню поштучно*/
+._1{top: 18px;left: 39px;}
+._2{top: 31px;left: 39px;}
+._3{top: 42px;left: 39px;}
+._4{top: 54px;left: 39px;}
+._5{top: 63px;left: 39px;}
+._6{top: 73px;left: 39px;}
+._7{top: 84px;left: 39px;}
+._8{top: 96px;left: 39px;}
+._9{top: 105px;left: 39px;}
+._10{top: 116px;left: 39px;}
+._11{top: 128px;left: 39px;}
+._12{top: 139px;left: 39px;}
+
 
 
 
 
 /*-------------каталог брендов------------*/
+/*.right.column h2 {*/
+    /*display: block;*/
+    /*color: #114165;*/
+    /*font-family: "Lucida Sans Unicode", Arial, sans-serif;*/
+    /*font-size: 13px;*/
+    /*font-weight: 400;*/
+    /*border: 1px solid #79878d;*/
+    /*border-radius: 20px;*/
+    /*box-shadow: 2px 3px 3px rgba(150, 150, 150, 0.75);*/
+    /*background-image: url("../images/doc.png");*/
+    /*background-position: 4px center;*/
+    /*background-repeat: no-repeat;*/
+    /*width: 153px;*/
+    /*height: 27px;*/
+    /*padding-left: 28px;*/
+    /*line-height: 28px;*/
+    /*margin-bottom: 13px;*/
+/*}*/
 
-.right.column > form {
-    margin-left: 6px;
-}
+/*.right.column > form {*/
+    /*margin-left: 6px;*/
+/*}*/
 
-.brand_submenu {
-    display: inline-block;
-    height: 14px;
-    margin-left: 8px;
-    margin-top: 10px;
-    color: #465961;
-    font-family: "Lucida Sans Unicode";
-    font-size: 13px;
-    font-weight: 400;
-    /*line-height: 25px;*/
-}
+/*.brand_submenu {*/
+    /*display: inline-block;*/
+    /*height: 14px;*/
+    /*margin-left: 8px;*/
+    /*margin-top: 10px;*/
+    /*color: #465961;*/
+    /*font-family: "Lucida Sans Unicode";*/
+    /*font-size: 13px;*/
+    /*font-weight: 400;*/
+    /*!*line-height: 25px;*!*/
+/*}*/
 
-.brand_submenu > input {
-    margin-right: 20px;
-}
+/*.brand_submenu > input {*/
+    /*margin-right: 20px;*/
+/*}*/
 
 /*------центральный блок, колеса---------*/
 
